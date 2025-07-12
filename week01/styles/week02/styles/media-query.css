@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+header,main,footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px rgb(66, 66, 66);
+    padding: 1rem;
+    background: aqua;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background: whitesmoke;
+}
