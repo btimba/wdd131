@@ -26,3 +26,7 @@ section {
     padding: 1rem;
     background: whitesmoke;
 }
+
+h1 {
+    text-align: center
+}
