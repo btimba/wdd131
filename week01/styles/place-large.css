@@ -1,0 +1,54 @@
+@media only screen and (min-width: 50em ) {
+    h1 {
+        font-size: 2rem;
+        color: red;
+    }
+
+    header {
+        display: block;
+        background: #000;
+        display: block;
+    }
+
+    .grid {
+        display: block; 
+        position: relative;
+    }
+
+   .hero {
+    height: 600px;
+   }
+    
+    .overlay {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+    
+    h2,h3{
+        background-color: chartreuse;
+        padding: 0.5rem;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section {
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgb(0,0,0,0.1);
+    }
+
+    .data, .weather{
+        width: 350px;
+
+    }
+   
+    .weather-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
