@@ -50,6 +50,12 @@ main {
     padding: 1rem;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 figcaption {
     text-align: center;
     padding: 0.5rem;
@@ -107,6 +113,9 @@ footer {
 
 #menu::before {
 	content: "☰";
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #menu.open::before {
@@ -117,4 +126,6 @@ footer {
 	display: flex;
 }
 
-
+.active::before { 
+	content: "📌"; 
+}

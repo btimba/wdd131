@@ -34,6 +34,10 @@ h2,h4 {
     color: blue;
 }
 
+h4 {
+    margin-bottom: 150px;
+}
+
 h3 {
     color: #422cbe;
     text-decoration: underline;
@@ -101,12 +105,11 @@ main h1 {
 }
 
 main .card-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: start;
   gap: 1rem;
 }
-
 
 nav a {
 	display: block;
@@ -130,7 +133,6 @@ nav a:hover {
 }
 
 .card {
-    flex: 1;
     border: 1px solid#000;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -139,9 +141,7 @@ nav a:hover {
 }
 
 .card-container {
-    display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .flag {
@@ -152,6 +152,7 @@ figure {
     display: inline-block;
     text-align: center;
     margin: 1rem 0;
+    
 }
 
 figure figcaption {
