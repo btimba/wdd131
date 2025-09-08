@@ -79,14 +79,14 @@ footer {
 
 .navigation {
 	display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
     justify-content: space-around;
+    flex-direction: column;
 }
 
 .navigation a {
     display: none;
-    flex-direction: column;
     justify-content: space-around;
 	padding: 1rem;
 	text-align: center;
@@ -101,7 +101,7 @@ footer {
 }
 
 #menu {
-	display: block;
+	display: grid;
     grid-template-columns: 1fr;
     position: absolute;
     font-size: 1.5rem;
@@ -124,6 +124,7 @@ footer {
 
 .navigation.open a {
 	display: flex;
+    flex-direction: column;
 }
 
 .active::before { 

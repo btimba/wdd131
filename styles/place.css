@@ -20,6 +20,23 @@ header {
     display: block;
 }
 
+main {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: red;
+}
+
+footer {
+    background: rgb(6, 88, 6);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.75rem;
+    color: white;
+    
+}
+
 h1 {
     text-align: center;
     padding: 0.5rem;
