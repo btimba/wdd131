@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Labrada:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Spicy+Rice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato,Inter,'Times New Roman', Times, serif
+}
+
+header {
+    display: block;
+    background-color: rgb(108, 197, 153);
+    color: #2E4C2F;
+    padding: 1rem;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+h1 {
+	font-size: 1rem;
+	padding: 1rem;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+    grid-column: span 3 / 4;
+}
+
+main,footer {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(108, 197, 153);
+    color: #000000;
+}
+
+#banner {
+    display: block;
+    text-align: left;
+    font-size: 2rem;
+    padding: .5rem;
+    border: #000;
+    background-color:#fff;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+	display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.navigation a {
+    display: none;
+    justify-content: space-around;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+    font-size: larger;
+}
+.navigation a:hover {
+	color: rgb(60, 19, 173);
+    background-color: red;
+    text-shadow: 1px 1px 2px #000;
+
+}
+
+#menu {
+	display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu.open::before {
+	content: "≪";
+}
+
+.navigation.open a {
+	display: flex;
+    flex-direction: column;
+}
+
+.active::before { 
+	content: "📌"; 
+}
