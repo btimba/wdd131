@@ -1,0 +1,50 @@
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+        flex-direction: row;
+	}
+	
+	.navigation a {
+		text-align: center;
+        display: block;
+        flex: 1 1 100%;
+	}
+	
+    #menu {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        place-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: stretch;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: .5rem;
+        box-shadow: #0c0c0c 0px 0px 10px;
+    }
+
+    .gallery section {
+        border: 1px solid #555252;
+        border-radius: 8px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: #ddd2d2;
+        text-align: center;
+    }
+
+}
