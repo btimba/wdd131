@@ -188,7 +188,6 @@ smallLink.addEventListener('click', (event) => {
 homeLink.addEventListener('click', (event) => {
 	createTempleCards(temples);
 	//event.preventDefault();
-<<<<<<< HEAD
 });
 
 // active link highlighting
@@ -198,6 +197,4 @@ links.forEach(link => {
 		links.forEach(l => l.classList.remove('active'));
 		link.classList.add('active');
 	});	
-=======
->>>>>>> 738fe89e160f9be8eb0e336e83ab3423bc7c7621
 });
