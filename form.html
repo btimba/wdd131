@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Brian Timba">
+    <meta name="description" content="Product review form">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review Form</h1>
+        <form method="get" action="review.html" class="form-style">
+        <fieldset>
+            <legend>Product Name</legend>
+            <select name="products" id="products" required>
+                <option value="" disabled selected>Select a Product</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <div>Overall Rating</div>
+            <div class="stars">
+                <input type="radio" id="5star" name="rating" value="5" required>
+                <label for="5star" title="5 stars">★★★★★</label>
+                <input type="radio" id="4star" name="rating" value="4">
+                <label for="4star" title="4 stars">★★★★</label>
+                <input type="radio" id="3star" name="rating" value="3">
+                <label for="3star" title="3 stars">★★★</label>
+                <input type="radio" id="2star" name="rating" value="2">
+                <label for="2star" title="2 stars">★★</label>
+                <input type="radio" id="1star" name="rating" value="1">
+                <label for="1star" title="1 star">★</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Date of Installation</legend>
+            <input type="date" id="installDate" name="installDate" required>
+            <div>
+                <div>Which features did you find most useful in this product?</div><br>
+                <span class="note">(Select all that apply)</span><br>
+                <label><input type="checkbox" name="durable" value="yes">Durability</label>
+                <label><input type="checkbox" name="easy" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="design" value="yes">Design</label>  
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Written review<span class="note">(optional)</span></legend>
+            <textarea id="review" name="review" rows="5" cols="33" placeholder="Write your review here..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Your name<span class="note">(optional)</span></legend>
+            <input type="text" id="fname" name="fname">
+        </fieldset>
+        <button type="submit" aria-label="Submit Review">Post Review</button>
+        </form>
+    </main>
+    <footer>
+       ©<span id="currentyear"></span>
+        &bull; Brian Timba &bull; <br>
+        Last Modified: <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
