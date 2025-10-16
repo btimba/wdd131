@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="get in touch with us">
+    <meta name="author" content="Brian Timba">
+
+    <link rel="stylesheet" href="styles/youth-club-large.css">
+    <link rel="stylesheet" href="styles/youth-club.css">
+    <script src="scripts/youth.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+<header>
+        <h1>Hermanus Youth Actvities Club</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+     <main>
+    <section>
+      <h2>Contact Us</h2>
+      <p>
+        We'd love to hear from you! Whether you're interested in joining our club, volunteering,
+        or learning more about our activities — reach out anytime.
+      </p>
+      <form method="get" id="contact-form">
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for ="name">Fullname*</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email address*</label>
+            <input type="email" id="email" name="email" placeholder="@someone.gmail.com" required>
+        </fieldset>
+        <fieldset>
+            <legend>Monthly Newsletter</legend>
+            <label for="news">Subcribe for News letter</label>
+            <input type="checkbox" id="news" name="news">
+        </fieldset>
+        <fieldset>
+            <legend>Your Message</legend>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" cols="65" rows="10"></textarea>
+        </fieldset>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    </main>
+    <footer>
+        ©<span id="currentyear"></span>
+    &bull; Brian Timba &bull; <br>
+    Last Modified: <span id="lastModified"></span>
+    </footer>
+    </body>

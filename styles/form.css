@@ -81,6 +81,7 @@ h1 {
     width: 95%;
     max-width: 400px;
 }
+
 .form-style button[type="submit"]:hover {
     background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
     transition: background-image 0.3s ease-in-out;

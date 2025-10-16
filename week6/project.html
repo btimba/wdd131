@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Club</title>
+    <meta name="description" content="my site project">
+    <meta name="author" content="Brian Timba">
+
+    <link rel="stylesheet" href="styles/youth-club-large.css">
+    <link rel="stylesheet" href="styles/youth-club.css">
+    <script src="scripts/youth.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hermanus Youth Activities Club</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul>
+                <li><a href="project.html"class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to the Hermanus Youth Activities Club!</h2>
+        <p>Your go-to place for exciting youth activities in Hermanus. Explore our events, join our programs, and connect with other young people in the community.</p>
+        <div id="hero-image" class="hero">
+            <img src="images/Ym-view.webp" alt="youth group">
+        </div>
+        <section>
+            <h2>Featured Events</h2>
+            <div id="events-list">
+                <!-- Events will be populated here by JavaScript -->
+            </div>
+        </section>
+        </main>  
+    <footer>
+        ©<span id="currentyear"></span>
+        &bull; Brian Timba &bull; <br>
+        Last Modified: <span id="lastModified"></span>
+    </footer>  
+</body>
+</html>
